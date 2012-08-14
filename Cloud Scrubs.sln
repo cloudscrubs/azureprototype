@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WCFCloud", "WCFCloud\WCFCloud.ccproj", "{5C858BC3-ABEF-484D-9E2E-295143FE630B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFRole", "WCFRole\WCFRole.csproj", "{9B24BE84-E7DB-4B2E-BF9E-FB651B84FFDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudScrubsStorage", "..\..\..\..\Dropbox\Imagine Cup\Libraries\CloudScrubsStorage\CloudScrubsStorage.csproj", "{3F43D58B-5892-44D6-AD9E-CB51B59F1C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{88A48E85-84B1-41A9-88E6-C37AEF0DC056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole2", "WorkerRole2\WorkerRole2.csproj", "{C4D29039-101D-4084-9174-C875EC932F5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud Scrubs Storage", "Cloud Scrubs Storage\Cloud Scrubs Storage.csproj", "{234FF02C-34C0-4081-8C66-EAFA93B3D5CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud Scrubs Mobile", "Cloud Scrubs Mobile\Cloud Scrubs Mobile.csproj", "{2ED0B7EC-261C-4321-B673-7C81EA738DF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C858BC3-ABEF-484D-9E2E-295143FE630B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C858BC3-ABEF-484D-9E2E-295143FE630B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C858BC3-ABEF-484D-9E2E-295143FE630B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C858BC3-ABEF-484D-9E2E-295143FE630B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B24BE84-E7DB-4B2E-BF9E-FB651B84FFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B24BE84-E7DB-4B2E-BF9E-FB651B84FFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B24BE84-E7DB-4B2E-BF9E-FB651B84FFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B24BE84-E7DB-4B2E-BF9E-FB651B84FFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F43D58B-5892-44D6-AD9E-CB51B59F1C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F43D58B-5892-44D6-AD9E-CB51B59F1C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F43D58B-5892-44D6-AD9E-CB51B59F1C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F43D58B-5892-44D6-AD9E-CB51B59F1C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A48E85-84B1-41A9-88E6-C37AEF0DC056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A48E85-84B1-41A9-88E6-C37AEF0DC056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A48E85-84B1-41A9-88E6-C37AEF0DC056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A48E85-84B1-41A9-88E6-C37AEF0DC056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D29039-101D-4084-9174-C875EC932F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D29039-101D-4084-9174-C875EC932F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D29039-101D-4084-9174-C875EC932F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D29039-101D-4084-9174-C875EC932F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234FF02C-34C0-4081-8C66-EAFA93B3D5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234FF02C-34C0-4081-8C66-EAFA93B3D5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234FF02C-34C0-4081-8C66-EAFA93B3D5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234FF02C-34C0-4081-8C66-EAFA93B3D5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED0B7EC-261C-4321-B673-7C81EA738DF7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

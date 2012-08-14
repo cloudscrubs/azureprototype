@@ -1,0 +1,88 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="CloudScrubsMobile.Test1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox x:Name="inputbox" />
+            <Button x:Name="inputButton" Content="Search" Click="inputButton_Click" />
+            <Grid x:Name="dataholder">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="SSN" Grid.Row="0" Grid.Column="0" />
+                <TextBlock Text="Name" Grid.Row="1" Grid.Column="0" />
+                <TextBlock Text="DOB" Grid.Row="2" Grid.Column="0" />
+                <TextBlock Text="Gender" Grid.Row="3" Grid.Column="0" />
+                <TextBlock Text="Address" Grid.Row="4" Grid.Column="0" />
+                <TextBlock Text="Nationality" Grid.Row="5" Grid.Column="0" />
+                <TextBlock Text="Phone Number" Grid.Row="6" Grid.Column="0" />
+                <TextBlock Text="Legal Status" Grid.Row="7" Grid.Column="0" />
+                <TextBlock Text="Insurance" Grid.Row="8" Grid.Column="0" />
+                <TextBlock Text="Next Of Kin" Grid.Row="9" Grid.Column="0" />
+
+                <TextBlock x:Name="SSN" Grid.Row="0" Grid.Column="1" />
+                <TextBlock x:Name="Name" Grid.Row="1" Grid.Column="1" />
+                <TextBlock x:Name="DOB" Grid.Row="2" Grid.Column="1" />
+                <TextBlock x:Name="Gender" Grid.Row="3" Grid.Column="1" />
+                <TextBlock x:Name="Address" Grid.Row="4" Grid.Column="1" />
+                <TextBlock x:Name="Nationality" Grid.Row="5" Grid.Column="1" />
+                <TextBlock x:Name="PhoneNumber" Grid.Row="6" Grid.Column="1" />
+                <TextBlock x:Name="LegalStatus" Grid.Row="7" Grid.Column="1" />
+                <TextBlock x:Name="Insurance" Grid.Row="8" Grid.Column="1" />
+                <TextBlock x:Name="NextOfKin" Grid.Row="9" Grid.Column="1" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

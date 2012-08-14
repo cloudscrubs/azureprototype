@@ -1,0 +1,115 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="CloudScrubsMobile.DataDisplayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded">
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Cloud_Back_phone.jpg" />
+        </Grid.Background>
+        <controls:Panorama Title="Cloud Scrubs" Foreground="#FF514754">
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="Patient Info">
+                <Grid>
+                    <Grid x:Name="dataholder" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="1.2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="SSN" Grid.Row="0" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Name" Grid.Row="1" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="DOB" Grid.Row="2" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Gender" Grid.Row="3" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Address" Grid.Row="4" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Nationality" Grid.Row="5" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Phone" Grid.Row="6" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Legal Status" Grid.Row="7" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Insurance" Grid.Row="8" Grid.Column="0" />
+                        <TextBlock FontSize="30" VerticalAlignment="Center" Text="Next Of Kin" Grid.Row="9" Grid.Column="0" />
+
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="SSN" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Name" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="DOB" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Gender" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Address" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Nationality" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="PhoneNumber" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="LegalStatus" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Insurance" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="NextOfKin" Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" />
+                    </Grid>
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="General Data">
+                <Grid>
+                    <Grid x:Name="dataholder2" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                       
+                        <TextBlock FontSize="30" Text="Height" Grid.Row="0" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Weight" Grid.Row="1" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Blood Type" Grid.Row="2" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Blood Pressure" Grid.Row="3" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Allergies" Grid.Row="4" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="BMI" Grid.Row="5" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Conditions" Grid.Row="6" Grid.Column="0" />
+                        <TextBlock FontSize="30" Text="Others" Grid.Row="7" Grid.Column="0" />                        
+
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Height" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Weight" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="BloodType" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="BloodPressure" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Allergies" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="BMI" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Conditions" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock FontSize="25" VerticalAlignment="Center" x:Name="Others" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" />                        
+                        
+                    </Grid>
+                </Grid>
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+
+    <!--Panorama-based applications should not show an ApplicationBar-->
+
+</phone:PhoneApplicationPage>

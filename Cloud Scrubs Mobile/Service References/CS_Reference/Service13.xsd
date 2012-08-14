@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CloudScrubsStorage" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CloudScrubsStorage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.WindowsAzure.StorageClient" />
+  <xs:complexType name="BasicDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.WindowsAzure.StorageClient" base="q1:TableServiceEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LegalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MedicalInsurance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NextOfKin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SSN" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BasicDetails" nillable="true" type="tns:BasicDetails" />
+  <xs:complexType name="GeneralHistory">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.WindowsAzure.StorageClient" base="q2:TableServiceEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Allergies" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BMI" type="xs:int" />
+          <xs:element minOccurs="0" name="BloodPressure" type="xs:int" />
+          <xs:element minOccurs="0" name="BloodType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Conditions" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Height" type="xs:int" />
+          <xs:element minOccurs="0" name="Others" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientIDLinkRowKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Weight" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralHistory" nillable="true" type="tns:GeneralHistory" />
+  <xs:complexType name="AilmentDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.WindowsAzure.StorageClient" base="q3:TableServiceEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AilmentDetailRowKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Diagnosis" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Hospital" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Lab_Pathology" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Lab_Physical" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Lab_Radiology" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Medication" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientIDLinkRowKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgressNotes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Symptoms" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TimeIn" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TimeOut" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Treatment" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AilmentDetails" nillable="true" type="tns:AilmentDetails" />
+  <xs:complexType name="ArrayOfAilmentDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AilmentDetails" nillable="true" type="tns:AilmentDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAilmentDetails" nillable="true" type="tns:ArrayOfAilmentDetails" />
+</xs:schema>

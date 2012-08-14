@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFRole" />
+      <xsd:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloudScrubsStorage" />
+      <xsd:import schemaLocation="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.WindowsAzure.StorageClient" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPatientData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatientData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPatientData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatientDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddGeneralHistoryData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddGeneralHistoryData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddGeneralHistoryData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddGeneralHistoryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeePatientData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeePatientData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeePatientData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeePatientDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBasicDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBasicDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeGeneralHistoryData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeeGeneralHistoryData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeGeneralHistoryData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeeGeneralHistoryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateGeneralHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGeneralHistory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateGeneralHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGeneralHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddAilmentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAilmentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddAilmentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAilmentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeAilmentDetailsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeeAilmentDetailsData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeAilmentDetailsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeeAilmentDetailsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeSpecificAilmentDetailsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeeSpecificAilmentDetailsData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SeeSpecificAilmentDetailsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeeSpecificAilmentDetailsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateSpecificAilmentsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSpecificAilmentsData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateSpecificAilmentsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSpecificAilmentsDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPatientData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddPatientData" message="tns:IService1_AddPatientData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddPatientDataResponse" message="tns:IService1_AddPatientData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGeneralHistoryData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddGeneralHistoryData" message="tns:IService1_AddGeneralHistoryData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddGeneralHistoryDataResponse" message="tns:IService1_AddGeneralHistoryData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeePatientData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SeePatientData" message="tns:IService1_SeePatientData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SeePatientDataResponse" message="tns:IService1_SeePatientData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBasicDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBasicDetails" message="tns:IService1_UpdateBasicDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBasicDetailsResponse" message="tns:IService1_UpdateBasicDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeeGeneralHistoryData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SeeGeneralHistoryData" message="tns:IService1_SeeGeneralHistoryData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SeeGeneralHistoryDataResponse" message="tns:IService1_SeeGeneralHistoryData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneralHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateGeneralHistory" message="tns:IService1_UpdateGeneralHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateGeneralHistoryResponse" message="tns:IService1_UpdateGeneralHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAilmentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddAilmentDetails" message="tns:IService1_AddAilmentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddAilmentDetailsResponse" message="tns:IService1_AddAilmentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeeAilmentDetailsData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SeeAilmentDetailsData" message="tns:IService1_SeeAilmentDetailsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SeeAilmentDetailsDataResponse" message="tns:IService1_SeeAilmentDetailsData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeeSpecificAilmentDetailsData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SeeSpecificAilmentDetailsData" message="tns:IService1_SeeSpecificAilmentDetailsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SeeSpecificAilmentDetailsDataResponse" message="tns:IService1_SeeSpecificAilmentDetailsData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSpecificAilmentsData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateSpecificAilmentsData" message="tns:IService1_UpdateSpecificAilmentsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateSpecificAilmentsDataResponse" message="tns:IService1_UpdateSpecificAilmentsData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPatientData">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddPatientData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGeneralHistoryData">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddGeneralHistoryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeePatientData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SeePatientData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBasicDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBasicDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeeGeneralHistoryData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SeeGeneralHistoryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneralHistory">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateGeneralHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAilmentDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddAilmentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeeAilmentDetailsData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SeeAilmentDetailsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeeSpecificAilmentDetailsData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SeeSpecificAilmentDetailsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSpecificAilmentsData">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateSpecificAilmentsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://9f6a5319047b434bb4ccf2e373c03cfd.cloudapp.net/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
